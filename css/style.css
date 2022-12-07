@@ -152,5 +152,5 @@ select {
 .done {
     background-color: #395169;
     text-decoration: line-through;
-    font-style: italic;
+    font-style: it;
 }
