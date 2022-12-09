@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("../img/wall45.jpg");
+  background-image: linear-gradient(rgba(34, 32, 32, 0.8), rgba(34, 32, 32, 0.8)), url("../img/wall45.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -54,7 +54,7 @@ select {
 .todo-container {
   max-width: 450px;
   margin: 3rem auto;
-  background-color: #fdfdfd;
+  background-color:lightsteelblue;
   padding: 1.5rem;
   border-radius: 15px;
 }
@@ -153,4 +153,9 @@ select {
     background-color: #395169;
     text-decoration: line-through;
     font-style: it;
+}
+
+.video {
+  width: 560px;
+  margin: 4em auto;
 }
