@@ -13,6 +13,109 @@ body {
   background-size: cover;
 }
 
+.menubar{  
+  width: 7%;
+  padding:16px;
+  background-color:lightsteelblue;
+  display: flex;
+  float: left;
+  margin:2em;
+  border-radius:20%;
+}
+.menu-dropdown {   
+  display: flex;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu-dropdown .md-item{  
+  position: relative;   
+}
+.menu-dropdown .md-item:hover{ /* efeito hover nos itens do menu principal */
+  background-color:lightsteelblue;
+}
+.menu-dropdown .md-item a{
+  color: #fff; 
+  padding:16px;
+  text-decoration: none;
+  display: flex;
+}
+.menu-dropdown .md-item a:hover{ /* efeito hover nos links do menu principal */
+  background-color:gray;
+  border-radius: 20%;
+}
+.submenu-dropdown{
+  display: none; /* esconde o submenu dropdown */
+  position: absolute;
+  width:100%;  
+}
+.sd-item:hover .submenu-dropdown{
+  display: flex;  
+}
+.submenu-dropdown .sd-item{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 100%;
+  width: 100%;
+}
+.submenu-dropdown .sd-item a{
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5%;
+  width:100%;
+  padding:12px;
+  background-color:cadetblue;
+  color: #fff; 
+}
+.submenu-dropdown .sd-item a:hover { /* efeito hover nos itens do submenu dropdown */
+  background-color: gray;
+}
+.menu-dropdown .md-item:hover .submenu-dropdown{   /*efeito hover para alterar a cor de fundo*/
+  background-color: black; 
+  display: flex; /* exibir o submenu dropdown */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 button {
   background-color: #fdfdfd;
   color: #102f5e;
