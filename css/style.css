@@ -16,80 +16,96 @@ body {
   background-position: center;
   background-size: cover;
 }
+.fa-regular {
+  font-size: 35px;
+  box-sizing: border-box;
+  width: 90px;
+  cursor: pointer;
+}
+.fa-regular:hover {
+  scale: 1.1;
+  color: #102f5e;
+  transition: all 200ms ease-in-out;
+}
 
 .menubar {
-  width: 7%;
-  padding: 16px;
-  background-color: lightsteelblue;
-  display: flex;
-  float: left;
-  margin: 2em;
-  border-radius: 20%;
+  width: 80px;
+  background-color: rgba(157, 182, 185, 0.8);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .menu-dropdown {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+  flex-direction: column;
+  justify-content: space-evenly;
   list-style-type: none;
+  height: 100%;
+  margin-left: 22px;
+  width: 200px;
 }
 
-.menu-dropdown .md-item {
-  position: relative;
-}
-.menu-dropdown .md-item:hover {
-  /* efeito hover nos itens do menu principal */
-  background-color: lightsteelblue;
-}
-.menu-dropdown .md-item a {
-  color: #fff;
-  padding: 16px;
-  text-decoration: none;
+.md-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-dropdown .md-item a:hover {
-  /* efeito hover nos links do menu principal */
-  background-color: gray;
-  border-radius: 20%;
+  justify-content: flex-start;
+  position: relative;
+  
 }
 .submenu-dropdown {
-  display: none; /* esconde o submenu dropdown */
-  position: absolute;
-  width: 100%;
-}
-.sd-item:hover .submenu-dropdown {
-  display: flex;
-}
-.submenu-dropdown .sd-item {
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 0;
-  top: 100%;
   width: 100%;
-  border-radius: 20%;
+  background-color: rgba(65, 130, 137, 0.8);
+  opacity: 0;
+  z-index: 0;
+  transform: translateY(-900px);
 }
-.submenu-dropdown .sd-item a {
-  text-align: center;
-  font-weight: bold;
-  border-radius: 20%;
-  width: 100%;
-  padding: 12px;
-  background-color: cadetblue;
-  color: #fff;
+
+.md-item:hover .submenu-dropdown{
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+  position: absolute;
+  margin-left: 0px;
+  left: 58px;
+  transform: translateY(0)
+
 }
-.submenu-dropdown .sd-item a:hover {
-  /* efeito hover nos itens do submenu dropdown */
-  background-color: gray;
+
+.submenu-dropdown:hover{
+  transform: translateY(0)
 }
-.menu-dropdown .md-item:hover .submenu-dropdown {
-  /*efeito hover para alterar a cor de fundo*/
-  background-color: black;
-  display: flex; /* exibir o submenu dropdown */
+
+.submenu-dropdown a {
+  padding: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
+.submenu-dropdown a:hover {
+  scale: 1.01;
+  transition: all 200ms ease;
+  color: rgb(196, 243, 240);
+}
+
+.menu-btn{
+  background-color: rgba(65, 130, 137, 0.5);
+  border: none;
+  padding: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+
+}
+.menu-btn:hover{
+  scale: 1.01;
+  transition: all 200ms ease;
+  color: rgb(196, 243, 240);
+  cursor: pointer;
+}
+
+
 
 #agenda-div {
   display: flex;
@@ -132,8 +148,6 @@ input,
 select {
   padding: 0.25rem 0.5rem;
 }
-
-
 
 /* Todo header */
 .todo-container {
@@ -267,7 +281,7 @@ select {
   transition: color 500ms ease;
 }
 
-.toggle-btn{
+.toggle-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,12 +289,12 @@ select {
   height: 50px;
 }
 
-.send-cancel{
+.send-cancel {
   display: flex;
   width: 100px;
   justify-content: space-between;
 }
-.send-cancel p{
+.send-cancel p {
   color: white;
 }
 
@@ -291,7 +305,47 @@ select {
   width: 500px;
 }
 
-
 .hide {
   display: none;
+}
+
+
+
+.today-date,
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  color: #102f5e;
+  text-align: right;
+}
+
+.time {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.time::after {
+  content: "";
+  background-color: #102f5e;
+  height: 2px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Timer */
+
+.timer-container{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: 200px;
+margin-top: 40px;
+}
+
+.buttons-timer{
+  display: flex;
 }
