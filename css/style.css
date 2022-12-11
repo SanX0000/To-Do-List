@@ -272,7 +272,6 @@ select {
   border: none;
   transition: all 200 ease;
   cursor: pointer;
-  margin-top: 50px;
 }
 
 .img-btn:hover {
@@ -287,13 +286,19 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 100px;
+}
+
+#img-btn-choose{
+  margin-bottom: 10px;
 }
 
 .send-cancel {
   display: flex;
   width: 100px;
   justify-content: space-between;
+  margin: 15px;
+  margin-bottom: 105px;
 }
 .send-cancel p {
   color: white;
