@@ -30,6 +30,7 @@
             </li>
     </div>
 </header>
+
 <body>
     <div class="todo-container">
         <header>
@@ -39,7 +40,7 @@
             <p>Adicione sua tarefa</p>
             <div class="form-control">
                 <input type="text" id="todo-input" placeholder="O que você precisa fazer?">
-                <button title="adicionar" type="submit">
+                <button class="buttons" title="adicionar" type="submit">
                     <i class="fa-thin fa-plus"></i>
                 </button>
             </div>
@@ -48,18 +49,18 @@
             <p>Edite a sua tarefa</p>
             <div class="form-control">
                 <input type="text" id="edit-input" />
-                <button title="enviar" type="submit">
+                <button class="buttons" title="enviar" type="submit">
                     <i class="fa-solid fa-check-double"></i>
                 </button>
             </div>
-            <button id="cancel-edit-btn" title="cancelar">Cancelar</button>
+            <button class="buttons" id="cancel-edit-btn" title="cancelar">Cancelar</button>
         </form>
         <div id="toolbar">
             <div id="search">
                 <h4>Pesquisar</h4>
                 <form>
                     <input type="text" id="search-input" placeholder="Buscar">
-                    <button id="erase-button" title="limpar">
+                    <button class="buttons" id="erase-button" title="limpar">
                         <i class="fa-solid fa-delete-left"></i>
                     </button>
                 </form>
@@ -73,48 +74,25 @@
                 </select>
             </div>
         </div>
-        <div id="todo-list">
-            <!-- <div class="todo done">
-                <h3>Estou fazendo alguma coisa...</h3>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-check"></i>
-                </button>
-                <button class="edit-todo">
-                    <i class="fa-solid fa-pen"></i>
-                </button>
-                <button class="remove-todo">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="todo">
-                <h3>Estudar JavaScript</h3>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-check"></i>
-                </button>
-                <button class="edit-todo">
-                    <i class="fa-solid fa-pen"></i>
-                </button>
-                <button class="remove-todo">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="todo">
-                <h3>Ler</h3>
-                <button class="finish-todo">
-                    <i class="fa-solid fa-check"></i>
-                </button>
-                <button class="edit-todo">
-                    <i class="fa-solid fa-pen"></i>
-                </button>
-                <button class="remove-todo">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div> -->
-        </div>
+        <div id="todo-list"></div>
     </div>
     <br>
     <br>
-    
+    <div class="change-img">
+        <button id="img-btn-choose" class="img-btn">Escolher imagem de fundo</button>
+        <div class="toggle-btn">
+            <input title="Insira aqui o link da imagem" placeholder="URL da imagem" type="text" class="img-input">
+            <div class="send-cancel">
+                <button class="img-btn send">Enviar</button>
+                <p> / </p>
+                <button id="img-btn-cancel" class="img-btn">Cancelar</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
     <!-- <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PzUZsoyMXuY" title="YouTube video player"
