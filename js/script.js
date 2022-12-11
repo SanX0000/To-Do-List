@@ -264,7 +264,8 @@ addDate()
 
 // Timer
 
-const menuBtnTimer = document.querySelector('.menu-btn')
+const menuBtnTimer = document.querySelector('.menu-btn-timer')
+const menuBtnTodo = document.querySelector('.menu-btn-todo')
 const todoAll = document.querySelector('.todo-all')
 const timerAll = document.querySelector('.timer-all')
 const goBackBtn = document.querySelector('#btn-voltar')
@@ -287,6 +288,10 @@ const hideTimer = () => {
 const showTimer = () => {
   todoAll.classList.add('hide')
   timerAll.classList.remove('hide')
+}
+const showTodo = () => {
+  todoAll.classList.remove('hide')
+  timerAll.classList.add('hide')
 }
 
 
@@ -322,5 +327,6 @@ function setTimer(s) {
 }
 
 
+menuBtnTodo.addEventListener('click', showTodo)
 menuBtnTimer.addEventListener('click', showTimer)
 goBackBtn.addEventListener('click', hideTimer)

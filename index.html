@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo Avançado</title>
+    <title>Auxiliador de tarefas</title>
     <!-- CSS do Projeto -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
@@ -17,22 +17,20 @@
 </head>
 <header>
     <div class="menubar">
-        <ul class="menu-dropdown">
+        <ul class="menu-dropdown">      
             <li class="md-item">
-                <i class="fa-regular fa-newspaper"></i>
-                <ul>
+                <i class="fa-regular fa-solid fa-list-check"></i>                <ul>
                     <li class="submenu-dropdown">
-                        <a href="https://ead.unisc.br/blog/administracao-tempo">Dicas Úteis</a>
-                        <a href="https://calendar.google.com/calendar/u/0/r?pli=1">Google Agenda</a>
-                        <a href="https://www.tuasaude.com/calculadora/dormir-melhor/">Melhore seu Sono</a>
+                        <button class="menu-btn menu-btn-todo">Lista de tarefas</button>
                     </li>
                 </ul>
             </li>
+            
             <li class="md-item">
                 <i class="fa-regular fa-clock"></i>
                 <ul>
                     <li class="submenu-dropdown">
-                        <button class="menu-btn">Timer</button>
+                        <button class="menu-btn menu-btn-timer">Timer</button>
                     </li>
                 </ul>
             </li>
@@ -40,7 +38,16 @@
                 <i class="fa-regular fa-calendar"></i>
                 <ul>
                     <li class="submenu-dropdown">
-                        <a href="https://calendar.google.com/calendar/u/0/r?pli=1">Google Agenda</a>
+                        <a target="_blank" href="https://calendar.google.com/calendar/u/0/r?pli=1">Google Agenda</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="md-item">
+                <i class="fa-regular fa-newspaper"></i>
+                <ul>
+                    <li class="submenu-dropdown">
+                        <a target="_blank" href="https://ead.unisc.br/blog/administracao-tempo">Dicas Úteis</a>
+                        <a target="_blank" href="https://www.tuasaude.com/calculadora/dormir-melhor/">Melhore seu Sono</a>
                     </li>
                 </ul>
             </li>
