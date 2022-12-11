@@ -21,16 +21,19 @@ const createTodo = (text) => {
 
   const doneBtn = document.createElement("button");
   doneBtn.classList.add("finish-todo");
+  doneBtn.classList.add("buttons");
   doneBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
   todo.appendChild(doneBtn);
 
   const editBtn = document.createElement("button");
   editBtn.classList.add("edit-todo");
+  editBtn.classList.add("buttons");
   editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
   todo.appendChild(editBtn);
 
   const deleteBtn = document.createElement("button");
   deleteBtn.classList.add("remove-todo");
+  deleteBtn.classList.add("buttons");
   deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
   todo.appendChild(deleteBtn);
 
@@ -200,3 +203,46 @@ const filterTodos = (e) => {
   }
 };
 filterSelect.addEventListener("change", filterTodos);
+
+// Change background image
+const imgInput = document.querySelector(".img-input");
+const imgBtnSend = document.querySelector(".send");
+const imgBtnChoose = document.querySelector("#img-btn-choose");
+const imgBtnCancel = document.querySelector("#img-btn-cancel");
+const divSendCalcel = document.querySelector(".toggle-btn");
+divSendCalcel.classList.add("hide");
+
+
+const showInputUrl = () => {
+  divSendCalcel.classList.toggle("hide");
+};
+
+const savePrevImage = () => {
+  const url = imgInput.value;
+  let urlJSON = JSON.stringify(url);
+  console.log(urlJSON);
+  localStorage.setItem("url", urlJSON); 
+};
+
+const getPrevImage = () => {
+  let getUrl = localStorage.getItem("url");
+  let newUrl = JSON.parse(getUrl);
+  document.body.style.backgroundImage = `url('${newUrl}')`;
+
+}
+getPrevImage()
+
+
+const changeBackgroundImage = () => {
+  const url = imgInput.value;
+  savePrevImage(url)
+  // let newUrl = savePrevImage(url);
+  document.body.style.backgroundImage = `url('${url}')`;
+  divSendCalcel.classList.toggle("hide");
+};
+
+
+
+imgBtnChoose.addEventListener("click", showInputUrl);
+imgBtnSend.addEventListener("click", changeBackgroundImage);
+imgBtnCancel.addEventListener("click", showInputUrl);

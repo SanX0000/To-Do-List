@@ -8,21 +8,25 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(34, 32, 32, 0.8), rgba(34, 32, 32, 0.8)), url("../img/wall45.jpg");
+  background-image: linear-gradient(
+      rgba(34, 32, 32, 0.8),
+      rgba(34, 32, 32, 0.8)
+    ),
+    url("../img/wall45.jpg");
   background-position: center;
   background-size: cover;
 }
 
-.menubar{  
+.menubar {
   width: 7%;
-  padding:16px;
-  background-color:lightsteelblue;
+  padding: 16px;
+  background-color: lightsteelblue;
   display: flex;
   float: left;
-  margin:2em;
-  border-radius:20%;
+  margin: 2em;
+  border-radius: 20%;
 }
-.menu-dropdown {   
+.menu-dropdown {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,35 +34,36 @@ body {
   list-style-type: none;
 }
 
-.menu-dropdown .md-item{  
-  position: relative;   
+.menu-dropdown .md-item {
+  position: relative;
 }
-.menu-dropdown .md-item:hover{ /* efeito hover nos itens do menu principal */
-  background-color:lightsteelblue;
+.menu-dropdown .md-item:hover {
+  /* efeito hover nos itens do menu principal */
+  background-color: lightsteelblue;
 }
-.menu-dropdown .md-item a{
-  color: #fff; 
-  padding:16px;
+.menu-dropdown .md-item a {
+  color: #fff;
+  padding: 16px;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-.menu-dropdown .md-item a:hover{ /* efeito hover nos links do menu principal */
-  background-color:gray;
+.menu-dropdown .md-item a:hover {
+  /* efeito hover nos links do menu principal */
+  background-color: gray;
   border-radius: 20%;
 }
-.submenu-dropdown{
+.submenu-dropdown {
   display: none; /* esconde o submenu dropdown */
   position: absolute;
-  width:100%;  
+  width: 100%;
 }
-.sd-item:hover .submenu-dropdown{
-  display: flex;  
+.sd-item:hover .submenu-dropdown {
+  display: flex;
 }
-.submenu-dropdown .sd-item{
+.submenu-dropdown .sd-item {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -66,71 +71,36 @@ body {
   top: 100%;
   width: 100%;
   border-radius: 20%;
-
 }
-.submenu-dropdown .sd-item a{
+.submenu-dropdown .sd-item a {
   text-align: center;
   font-weight: bold;
   border-radius: 20%;
-  width:100%;
-  padding:12px;
-  background-color:cadetblue;
-  color: #fff; 
+  width: 100%;
+  padding: 12px;
+  background-color: cadetblue;
+  color: #fff;
 }
-.submenu-dropdown .sd-item a:hover { /* efeito hover nos itens do submenu dropdown */
+.submenu-dropdown .sd-item a:hover {
+  /* efeito hover nos itens do submenu dropdown */
   background-color: gray;
 }
-.menu-dropdown .md-item:hover .submenu-dropdown{   /*efeito hover para alterar a cor de fundo*/
-  background-color: black; 
+.menu-dropdown .md-item:hover .submenu-dropdown {
+  /*efeito hover para alterar a cor de fundo*/
+  background-color: black;
   display: flex; /* exibir o submenu dropdown */
 }
 
-
-
-#agenda-div{
+#agenda-div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#agenda{
- margin-left: -7px;
-  }
+#agenda {
+  margin-left: -7px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-button {
+.buttons {
   background-color: #fdfdfd;
   color: #102f5e;
   border: 2px solid #102f5e;
@@ -143,16 +113,16 @@ button {
   transition: 0, 4s;
 }
 
-button:hover {
+.buttons:hover {
   background-color: #102f5e;
   color: #fff;
 }
 
-button:hover > i {
+.buttons:hover > i {
   color: #fdfdfd;
 }
 
-button i {
+.buttons i {
   color: #102f5e;
   font-weight: bold;
   pointer-events: none;
@@ -163,15 +133,13 @@ select {
   padding: 0.25rem 0.5rem;
 }
 
-.hide {
-  display: none;
-}
+
 
 /* Todo header */
 .todo-container {
   max-width: 450px;
   margin: 3rem auto;
-  background-color:lightsteelblue;
+  background-color: lightsteelblue;
   padding: 1.5rem;
   border-radius: 15px;
 }
@@ -267,12 +235,63 @@ select {
 }
 
 .done {
-    background-color: #395169;
-    text-decoration: line-through;
-    font-style: it;
+  background-color: #395169;
+  text-decoration: line-through;
+  font-style: it;
 }
 
 .video {
   width: 560px;
   margin: 4em auto;
+}
+
+.change-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 0px;
+}
+.img-btn {
+  background: none;
+  color: white;
+  font-size: 12px;
+  border: none;
+  transition: all 200 ease;
+  cursor: pointer;
+}
+
+.img-btn:hover {
+  color: cadetblue;
+  transition: color 500ms ease;
+}
+
+.toggle-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.send-cancel{
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.send-cancel p{
+  color: white;
+}
+
+.img-input {
+  background: rgba(234, 243, 244, 0.8);
+  border: none;
+  border-radius: 4px;
+  width: 500px;
+}
+
+
+.hide {
+  display: none;
 }
