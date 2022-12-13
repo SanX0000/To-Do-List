@@ -1,5 +1,17 @@
 # To-Do-List
 
+<hr>
+<h2 align="center"> A concepção do projeto 💡 </h2>
+
+A ideia inicial era criar apenas uma lista de tarefas. Mas com a evolução do projeto, resolvemos impelmentar as seguintes adições no site: 
+ - Link com dicas de produtividade
+ - Google Agenda
+ - Um Timer para cronometrar atividades
+ - Link para Calculadora do Sono
+ - Possibilidade de alterar o fundo de tela
+
+Logo o que era uma simples lista de tarefas, se tornou uma central de produtividade.
+
 
 <hr>
 <h2 align="center">Tecnologias utilizadas 🛠</h2><br>
@@ -9,7 +21,13 @@
 
 
 <hr>
-<h2 align="center"> Contributors 💻</h2>
+<h2 align="center"> Desafios e aprendizados 💪✍️ </h2>
+
+Com esse projeto foi possível aprimorar o trabalho em equipe com o uso do GitHub, em especial das funcionalidades Pull Request e Git Pull. Também aprimoramos o código com  um menu do tipo drop e filtros para as imagens de fundo. Foi uma grande evolução para ambos no aspecto de divisão de trabalho e tomada de decisão.
+
+
+<hr>
+<h2 align="center"> Participantes 💻</h2>
 <table align="center">
 <tbody>
 <tr>
