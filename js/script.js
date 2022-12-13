@@ -219,48 +219,48 @@ const filterTodos = (e) => {
 };
 filterSelect.addEventListener("change", filterTodos);
 
-// Change background image
-const imgInput = document.querySelector(".img-input");
-const imgBtnSend = document.querySelector(".send");
-const imgBtnChoose = document.querySelector("#img-btn-choose");
-const imgBtnCancel = document.querySelector("#img-btn-cancel");
-const divSendCalcel = document.querySelector(".toggle-btn");
-divSendCalcel.classList.add("hide");
+// // Change background image
+// const imgInput = document.querySelector(".img-input");
+// const imgBtnSend = document.querySelector(".send");
+// const imgBtnChoose = document.querySelector("#img-btn-choose");
+// const imgBtnCancel = document.querySelector("#img-btn-cancel");
+// const divSendCancel = document.querySelector(".toggle-btn");
+// divSendCancel.classList.add("hide");
 
 
-const showInputUrl = () => {
-  divSendCalcel.classList.toggle("hide");
-};
+// const showInputUrl = () => {
+//   divSendCancel.classList.toggle("hide");
+// };
 
-const savePrevImage = () => {
-  const url = imgInput.value;
-  let urlJSON = JSON.stringify(url);
-  console.log(urlJSON);
-  localStorage.setItem("url", urlJSON); 
-};
+// const savePrevImage = () => {
+//   const url = imgInput.value;
+//   let urlJSON = JSON.stringify(url);
+//   console.log(urlJSON);
+//   localStorage.setItem("url", urlJSON); 
+// };
 
-const getPrevImage = () => {
-  let getUrl = localStorage.getItem("url");
-  let newUrl = JSON.parse(getUrl);
-  document.body.style.backgroundImage = `url('${newUrl}')`;
+// const getPrevImage = () => {
+//   let getUrl = localStorage.getItem("url");
+//   let newUrl = JSON.parse(getUrl);
+//   document.body.style.backgroundImage = `url('${newUrl}')`;
 
-}
-getPrevImage()
-
-
-const changeBackgroundImage = () => {
-  const url = imgInput.value;
-  savePrevImage(url)
-  // let newUrl = savePrevImage(url);
-  document.body.style.backgroundImage = `url('${url}')`;
-  divSendCalcel.classList.toggle("hide");
-};
+// }
+// getPrevImage()
 
 
+// const changeBackgroundImage = () => {
+//   const url = imgInput.value;
+//   savePrevImage(url)
+//   // let newUrl = savePrevImage(url);
+//   document.body.style.backgroundImage = `url('${url}')`;
+//   divSendCancel.classList.toggle("hide");
+// };
 
-imgBtnChoose.addEventListener("click", showInputUrl);
-imgBtnSend.addEventListener("click", changeBackgroundImage);
-imgBtnCancel.addEventListener("click", showInputUrl);
+
+
+// imgBtnChoose.addEventListener("click", showInputUrl);
+// imgBtnSend.addEventListener("click", changeBackgroundImage);
+// imgBtnCancel.addEventListener("click", showInputUrl);
 
 
 
