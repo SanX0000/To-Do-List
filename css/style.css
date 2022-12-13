@@ -301,10 +301,9 @@ select {
 
 .send-cancel {
   display: flex;
-  width: 100px;
+  width: 110px;
   justify-content: space-between;
-  margin: 15px;
-  margin-bottom: 105px;
+  margin: 20px;
 }
 .send-cancel p {
   color: white;
@@ -315,6 +314,7 @@ select {
   border: none;
   border-radius: 4px;
   width: 400px;
+  margin-top: 20px;
 }
 
 .hide {

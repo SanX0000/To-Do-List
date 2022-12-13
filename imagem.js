@@ -1,3 +1,17 @@
+// date
+const dateDiv = document.querySelector('.date')
+const timeDiv = document.querySelector('.time')
+
+
+
+const addDate = () => {
+  let todayDate = new Date()
+  dateDiv.classList.add('today-date')
+  dateDiv.innerHTML = todayDate.toLocaleString('pt-BR', {dateStyle: 'full'})
+  timeDiv.innerHTML = todayDate.toLocaleString('pt-BR', {timeStyle: 'short'})
+}
+addDate()
+
 // Change background image
 const imgInput = document.querySelector(".img-input");
 const imgBtnSend = document.querySelector(".send");
