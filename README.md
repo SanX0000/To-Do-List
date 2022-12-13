@@ -1,4 +1,4 @@
-# To-Do-List
+![To_Do_List](https://user-images.githubusercontent.com/115950745/207223282-6a4786cf-2e3f-470c-adfc-37b6df5176c6.png)
 
 <hr>
 <h2 align="center"> A concepção do projeto 💡 </h2>
@@ -26,6 +26,10 @@ Logo o que era uma simples lista de tarefas, se tornou uma central de produtivid
 Com esse projeto foi possível aprimorar o trabalho em equipe com o uso do GitHub, em especial das funcionalidades Pull Request e Git Pull. Também aprimoramos o código com  um menu do tipo drop e filtros para as imagens de fundo. Foi uma grande evolução para ambos no aspecto de divisão de trabalho e tomada de decisão.
 
 
+
+![Captura de tela 2022-12-13 010314](https://user-images.githubusercontent.com/115950745/207223738-95c4ebfb-02d6-4598-b031-44f8740f6474.jpg)
+
+
 <hr>
 <h2 align="center"> Participantes 💻</h2>
 <table align="center">
@@ -40,3 +44,4 @@ Com esse projeto foi possível aprimorar o trabalho em equipe com o uso do GitHu
 </tr>
 </tbody>
 </table>
+
