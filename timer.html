@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxiliador de tarefas</title>
+    <!-- CSS do Projeto -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JS do Projeto -->
+    <script src="./timer.js" defer></script>
+</head>
+<header>
+    <div class="menubar">
+        <ul class="menu-dropdown">
+            <li class="md-item">
+                <i class="fa-regular fa-solid fa-list-check"></i>
+                <ul>
+                    <li class="submenu-dropdown">
+                        <a href="./index.html">Lista de tarefas</a>
+                        <!-- <button class="menu-btn menu-btn-todo">Lista de tarefas</button> -->
+                    </li>
+                </ul>
+            </li>
+
+            <li class="md-item">
+                <i class="fa-regular fa-clock"></i>
+                <ul>
+                    <li class="submenu-dropdown">
+                        <button class="menu-btn menu-btn-timer">Timer</button>
+                    </li>
+                </ul>
+            </li>
+            <li class="md-item">
+                <i class="fa-regular fa-calendar"></i>
+                <ul>
+                    <li class="submenu-dropdown">
+                        <a target="_blank" href="https://calendar.google.com/calendar/u/0/r?pli=1">Google Agenda</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="md-item">
+                <i class="fa-regular fa-newspaper"></i>
+                <ul>
+                    <li class="submenu-dropdown">
+                        <a target="_blank" href="https://ead.unisc.br/blog/administracao-tempo">Dicas Úteis</a>
+                        <a target="_blank" href="https://www.tuasaude.com/calculadora/dormir-melhor/">Melhore seu sono</a>
+                    </li>
+                </ul>
+            </li>
+    </div>
+</header>
+
+<body>
+    <div class="todo-container">
+        <div class="date"></div>
+        <div class="time"></div>
+        <div class="timer-all">
+            <div class="timer-container">
+                <h1 class="title">Timer</h1>
+                <p class="timer">00:00:00</p>
+                <div class="buttons-timer">
+                    <button class="iniciar buttons" id="iniciar">Iniciar</button>
+                    <button class="pausar buttons" id="pausar">Pausar</button>
+                    <button class="zerar buttons" id="zerar">Zerar</button>
+                </div>
+                <button id="btn-voltar" class="buttons"><a href="./index.html">Voltar</a>
+                </button>
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>

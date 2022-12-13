@@ -16,6 +16,11 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}
 .fa-regular {
   font-size: 35px;
   box-sizing: border-box;
@@ -365,7 +370,8 @@ margin-top: 40px;
 #btn-voltar{
   font-size: 12px;
   background-color: #102f5e;
-  color: white;
+  color: #fff;
+  text-decoration: none;
 }
 #btn-voltar:hover{
   font-size: 12px;
