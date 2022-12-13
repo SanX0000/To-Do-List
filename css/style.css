@@ -295,7 +295,7 @@ select {
   height: 100px;
 }
 
-#img-btn-choose{
+/* #img-btn-choose{
   margin-bottom: 10px;
 }
 
@@ -315,7 +315,7 @@ select {
   border-radius: 4px;
   width: 400px;
   margin-top: 20px;
-}
+} */
 
 .hide {
   display: none;
