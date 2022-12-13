@@ -3,7 +3,7 @@
 <hr>
 <h2 align="center"> A concepção do projeto 💡 </h2>
 
-A ideia inicial era criar apenas uma lista de tarefas. Mas com a evolução do projeto, resolvemos impelmentar as seguintes adições no site: 
+A ideia inicial era criar apenas uma lista de tarefas. Mas com a evolução do projeto, resolvemos fazer as seguintes adições no site: 
  - Link com dicas de produtividade
  - Google Agenda
  - Um Timer para cronometrar atividades
