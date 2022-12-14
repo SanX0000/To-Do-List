@@ -1,3 +1,18 @@
+// date
+const dateDiv = document.querySelector('.date')
+const timeDiv = document.querySelector('.time')
+
+
+
+const addDate = () => {
+  let todayDate = new Date()
+  dateDiv.classList.add('today-date')
+  dateDiv.innerHTML = todayDate.toLocaleString('pt-BR', {dateStyle: 'full'})
+  timeDiv.innerHTML = todayDate.toLocaleString('pt-BR', {timeStyle: 'short'})
+}
+addDate()
+
+
 // Seleção de elementos
 const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
@@ -204,129 +219,117 @@ const filterTodos = (e) => {
 };
 filterSelect.addEventListener("change", filterTodos);
 
-// Change background image
-const imgInput = document.querySelector(".img-input");
-const imgBtnSend = document.querySelector(".send");
-const imgBtnChoose = document.querySelector("#img-btn-choose");
-const imgBtnCancel = document.querySelector("#img-btn-cancel");
-const divSendCalcel = document.querySelector(".toggle-btn");
-divSendCalcel.classList.add("hide");
+// // Change background image
+// const imgInput = document.querySelector(".img-input");
+// const imgBtnSend = document.querySelector(".send");
+// const imgBtnChoose = document.querySelector("#img-btn-choose");
+// const imgBtnCancel = document.querySelector("#img-btn-cancel");
+// const divSendCancel = document.querySelector(".toggle-btn");
+// divSendCancel.classList.add("hide");
 
 
-const showInputUrl = () => {
-  divSendCalcel.classList.toggle("hide");
-};
+// const showInputUrl = () => {
+//   divSendCancel.classList.toggle("hide");
+// };
 
-const savePrevImage = () => {
-  const url = imgInput.value;
-  let urlJSON = JSON.stringify(url);
-  console.log(urlJSON);
-  localStorage.setItem("url", urlJSON); 
-};
+// const savePrevImage = () => {
+//   const url = imgInput.value;
+//   let urlJSON = JSON.stringify(url);
+//   console.log(urlJSON);
+//   localStorage.setItem("url", urlJSON); 
+// };
 
-const getPrevImage = () => {
-  let getUrl = localStorage.getItem("url");
-  let newUrl = JSON.parse(getUrl);
-  document.body.style.backgroundImage = `url('${newUrl}')`;
+// const getPrevImage = () => {
+//   let getUrl = localStorage.getItem("url");
+//   let newUrl = JSON.parse(getUrl);
+//   document.body.style.backgroundImage = `url('${newUrl}')`;
 
-}
-getPrevImage()
-
-
-const changeBackgroundImage = () => {
-  const url = imgInput.value;
-  savePrevImage(url)
-  // let newUrl = savePrevImage(url);
-  document.body.style.backgroundImage = `url('${url}')`;
-  divSendCalcel.classList.toggle("hide");
-};
+// }
+// getPrevImage()
 
 
-
-imgBtnChoose.addEventListener("click", showInputUrl);
-imgBtnSend.addEventListener("click", changeBackgroundImage);
-imgBtnCancel.addEventListener("click", showInputUrl);
-
-
-// date
-const dateDiv = document.querySelector('.date')
-const timeDiv = document.querySelector('.time')
-
-
-const addDate = () => {
-  let todayDate = new Date()
-  dateDiv.classList.add('today-date')
-  dateDiv.innerHTML = todayDate.toLocaleString('pt-BR', {dateStyle: 'full'})
-  timeDiv.innerHTML = todayDate.toLocaleString('pt-BR', {timeStyle: 'short'})
-
-}
-addDate()
-
-// Timer
-
-const menuBtnTimer = document.querySelector('.menu-btn-timer')
-const menuBtnTodo = document.querySelector('.menu-btn-todo')
-const todoAll = document.querySelector('.todo-all')
-const timerAll = document.querySelector('.timer-all')
-const goBackBtn = document.querySelector('#btn-voltar')
-const btnStart = document.querySelector("#iniciar");
-const btnPause = document.querySelector("#pausar");
-const btnRestart = document.querySelector("#zerar");
-const timerDiv = document.querySelector(".timer");
-
-const iniciar = document.querySelector("#iniciar");
-const pausar = document.querySelector("#pausar");
-const zerar = document.querySelector("#zerar");
-let timer;
-let s = 0;
-
-
-const hideTimer = () => {
-  todoAll.classList.remove('hide')
-  timerAll.classList.add('hide')
-}
-const showTimer = () => {
-  todoAll.classList.add('hide')
-  timerAll.classList.remove('hide')
-}
-const showTodo = () => {
-  todoAll.classList.remove('hide')
-  timerAll.classList.add('hide')
-}
+// const changeBackgroundImage = () => {
+//   const url = imgInput.value;
+//   savePrevImage(url)
+//   // let newUrl = savePrevImage(url);
+//   document.body.style.backgroundImage = `url('${url}')`;
+//   divSendCancel.classList.toggle("hide");
+// };
 
 
 
-document.addEventListener("click", function (e) {
-  const el = e.target;
-
-  if (el.classList.contains("iniciar")) {
-    timer = setInterval(() => {
-      s++;
-      timerDiv.innerHTML = setTimer(s);
-      timerDiv.classList.remove("pausado");
-    }, 1000);
-  }
-  if (el.classList.contains("pausar")) {
-    clearInterval(timer);
-    timerDiv.classList.add("pausado");
-  }
-  if (el.classList.contains("zerar")) {
-    clearInterval(timer);
-    timerDiv.innerHTML = "00:00:00";
-    s = 0
-    timerDiv.classList.remove("pausado");
-  }
-});
-
-function setTimer(s) {
-  let date = new Date(s * 1000);
-  return date.toLocaleTimeString("pt-BR", {
-    hour12: false,
-    timeZone: "UTC",
-  });
-}
+// imgBtnChoose.addEventListener("click", showInputUrl);
+// imgBtnSend.addEventListener("click", changeBackgroundImage);
+// imgBtnCancel.addEventListener("click", showInputUrl);
 
 
-menuBtnTodo.addEventListener('click', showTodo)
-menuBtnTimer.addEventListener('click', showTimer)
-goBackBtn.addEventListener('click', hideTimer)
+
+
+// // Timer
+
+// const menuBtnTimer = document.querySelector('.menu-btn-timer')
+// const menuBtnTodo = document.querySelector('.menu-btn-todo')
+// const todoAll = document.querySelector('.todo-all')
+// const timerAll = document.querySelector('.timer-all')
+// const goBackBtn = document.querySelector('#btn-voltar')
+// const btnStart = document.querySelector("#iniciar");
+// const btnPause = document.querySelector("#pausar");
+// const btnRestart = document.querySelector("#zerar");
+// const timerDiv = document.querySelector(".timer");
+
+// const iniciar = document.querySelector("#iniciar");
+// const pausar = document.querySelector("#pausar");
+// const zerar = document.querySelector("#zerar");
+// let timer;
+// let s = 0;
+
+
+// const hideTimer = () => {
+//   todoAll.classList.remove('hide')
+//   timerAll.classList.add('hide')
+// }
+// const showTimer = () => {
+//   todoAll.classList.add('hide')
+//   timerAll.classList.remove('hide')
+// }
+// const showTodo = () => {
+//   todoAll.classList.remove('hide')
+//   timerAll.classList.add('hide')
+// }
+
+
+
+// document.addEventListener("click", function (e) {
+//   const el = e.target;
+
+//   if (el.classList.contains("iniciar")) {
+//     timer = setInterval(() => {
+//       s++;
+//       timerDiv.innerHTML = setTimer(s);
+//       timerDiv.classList.remove("pausado");
+//     }, 1000);
+//   }
+//   if (el.classList.contains("pausar")) {
+//     clearInterval(timer);
+//     timerDiv.classList.add("pausado");
+//   }
+//   if (el.classList.contains("zerar")) {
+//     clearInterval(timer);
+//     timerDiv.innerHTML = "00:00:00";
+//     s = 0
+//     timerDiv.classList.remove("pausado");
+//   }
+// });
+
+// function setTimer(s) {
+//   let date = new Date(s * 1000);
+//   return date.toLocaleTimeString("pt-BR", {
+//     hour12: false,
+//     timeZone: "UTC",
+//   });
+// }
+
+
+// menuBtnTodo.addEventListener('click', showTodo)
+// menuBtnTimer.addEventListener('click', showTimer)
+// goBackBtn.addEventListener('click', hideTimer)

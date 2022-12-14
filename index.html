@@ -14,23 +14,28 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- JS do Projeto -->
     <script src="js/script.js" defer></script>
+    <script src="./imagem.js" defer></script>
 </head>
 <header>
     <div class="menubar">
-        <ul class="menu-dropdown">      
+        <ul class="menu-dropdown">
             <li class="md-item">
-                <i class="fa-regular fa-solid fa-list-check"></i>                <ul>
+                <i class="fa-regular fa-solid fa-list-check"></i>
+                <ul>
                     <li class="submenu-dropdown">
-                        <button class="menu-btn menu-btn-todo">Lista de tarefas</button>
+                        <a href="./index.html">Lista de tarefas</a>
+                        <!-- <button class="menu-btn menu-btn-todo">Lista de tarefas</button> -->
                     </li>
                 </ul>
             </li>
-            
+
             <li class="md-item">
                 <i class="fa-regular fa-clock"></i>
                 <ul>
                     <li class="submenu-dropdown">
-                        <button class="menu-btn menu-btn-timer">Timer</button>
+                        <a href="./timer.html">Timer</a>
+
+                        <!-- <button class="menu-btn menu-btn-timer">Timer</button> -->
                     </li>
                 </ul>
             </li>
@@ -47,7 +52,8 @@
                 <ul>
                     <li class="submenu-dropdown">
                         <a target="_blank" href="https://ead.unisc.br/blog/administracao-tempo">Dicas Úteis</a>
-                        <a target="_blank" href="https://www.tuasaude.com/calculadora/dormir-melhor/">Melhore seu Sono</a>
+                        <a target="_blank" href="https://www.tuasaude.com/calculadora/dormir-melhor/">Melhore seu
+                            Sono</a>
                     </li>
                 </ul>
             </li>
@@ -56,9 +62,9 @@
 
 <body>
     <div class="todo-container">
-        <div class="date"></div>
-        <div class="time"></div>
-        <div class="timer-all hide">
+        <div class="date">oi</div>
+        <div class="time">oi</div>
+        <!-- <div class="timer-all hide">
             <div class="timer-container">
                 <h1 class="title">Timer</h1>
                 <p class="timer">00:00:00</p>
@@ -70,7 +76,7 @@
                 <button id="btn-voltar" class="buttons">Voltar</button>
             </div>
 
-        </div>
+        </div> -->
         <div class="todo-all">
             <header>
                 <h1>Lista de Tarefas</h1>
@@ -120,19 +126,17 @@
 
 
     </div>
-    <div class="change-img">
-        <button id="img-btn-choose" class="img-btn">Escolher imagem de fundo</button>
-        <div class="toggle-btn">
+    <!-- <div class="change-img">
+        <button id="img-btn-choose" class="img-btn"><a href="./imagem-de-fundo.html">Escolher imagem de fundo</a></button>
+        <div class="toggle-btn hide">
             <input title="Insira aqui o link da imagem" placeholder="URL da imagem" type="text" class="img-input">
             <div class="send-cancel">
                 <button class="img-btn send">Enviar</button>
                 <p> / </p>
                 <button id="img-btn-cancel" class="img-btn">Cancelar</button>
-
             </div>
-
         </div>
-    </div>
+    </div> -->
 
     <!-- <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PzUZsoyMXuY" title="YouTube video player"
