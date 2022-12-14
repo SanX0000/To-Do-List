@@ -14,6 +14,8 @@ Logo o que era uma simples lista de tarefas, se tornou uma central de produtivid
 <hr>
 <h2 align="center"> Link da página 🔗 </h2>
 
+<p align="center"> https://sanx0000.github.io/To-Do-List/ </p>
+
 <hr>
 <h2 align="center">Tecnologias utilizadas 🛠</h2><br>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" data-canonical-src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white" style="max-width: 100%;">
