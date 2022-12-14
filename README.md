@@ -43,4 +43,4 @@ Com esse projeto foi possível aprimorar o trabalho em equipe com o uso do GitHu
 </td>
 </tr>
 </tbody>
-</table>
+
