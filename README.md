@@ -8,10 +8,11 @@ A ideia inicial era criar apenas uma lista de tarefas. Mas com a evolução do p
  - Google Agenda
  - Um Timer para cronometrar atividades
  - Link para Calculadora do Sono
- - Possibilidade de alterar o fundo de tela
 
 Logo o que era uma simples lista de tarefas, se tornou uma central de produtividade.
 
+<hr>
+<h2 align="center"> Link da página 🔗 </h2>
 
 <hr>
 <h2 align="center">Tecnologias utilizadas 🛠</h2><br>
@@ -21,7 +22,7 @@ Logo o que era uma simples lista de tarefas, se tornou uma central de produtivid
 
 
 <hr>
-<h2 align="center"> Desafios e aprendizados 💪✍️ </h2>
+<h2 align="center"> Desafios e aprendizados ✍️ </h2>
 
 Com esse projeto foi possível aprimorar o trabalho em equipe com o uso do GitHub, em especial das funcionalidades Pull Request e Git Pull. Também aprimoramos o código com  um menu do tipo drop e filtros para as imagens de fundo. Foi uma grande evolução para ambos no aspecto de divisão de trabalho e tomada de decisão.
 
