@@ -27,8 +27,7 @@ Logo o que era uma simples lista de tarefas, se tornou uma central de produtivid
 Com esse projeto foi possível aprimorar o trabalho em equipe com o uso do GitHub, em especial das funcionalidades Pull Request e Git Pull. Também aprimoramos o código com  um menu do tipo drop e filtros para as imagens de fundo. Foi uma grande evolução para ambos no aspecto de divisão de trabalho e tomada de decisão.
 
 
-
-![Captura de tela 2022-12-13 010314](https://user-images.githubusercontent.com/115950745/207223738-95c4ebfb-02d6-4598-b031-44f8740f6474.jpg)
+![todo](https://user-images.githubusercontent.com/115950745/207486472-c3b63662-5ec9-4ee0-9c46-54166c75f773.jpg)
 
 
 <hr>
