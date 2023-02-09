@@ -12,7 +12,7 @@ A ideia inicial era criar apenas uma lista de tarefas. Mas com a evolução do p
 Logo o que era uma simples lista de tarefas, se tornou uma central de produtividade.
 
 <hr>
-<h2 align="center"> Link da página 🔗 </h2>
+<h2 align="center"> Acesse a página 🔗 </h2>
 
 <p align="center"> https://sanx0000.github.io/To-Do-List/ </p>
 
